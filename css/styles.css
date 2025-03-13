@@ -1,0 +1,183 @@
+.tasktracker__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 992px;
+  margin: auto;
+}
+
+.tasktracker__item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.tasktracker__status {
+  font-size: 0.8rem;
+  padding: 4px 16px;
+  color: #fff;
+  border-radius: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.tasktracker__status.task-status--new {
+  background: #4caf50;
+}
+
+.tasktracker__status.task-status--in-progress {
+  background: #ff9800;
+}
+
+.tasktracker__status.task-status--pending-review {
+  background: #2196f3;
+}
+
+.tasktracker__status.task-status--needs-revision {
+  background: #f44336;
+}
+
+.tasktracker__status.task-status--completed {
+  background: #9c27b0;
+}
+
+.tasktracker__status.task-status--rejected {
+  background: #616161;
+}
+
+.tasktracker__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.tasktracker__desc {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tasktracker__details-toggle {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.tasktracker__details {
+  display: none;
+  padding: 1rem 2rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.tasktracker__details h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.tasktracker__details p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tasktracker__details p:last-child {
+  margin-bottom: 0;
+}
+
+.tasktracker__buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.tasktracker__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+  transition: background 0.3s ease-in-out;
+}
+
+.tasktracker__button svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.tasktracker__button--play {
+  background: #4caf50;
+}
+
+.tasktracker__button--reject {
+  background: #f44336;
+}
+
+.tasktracker__button--send {
+  background: #2196f3;
+}
+
+.tasktracker__button--replay {
+  background: #ff9800;
+}
+
+.tasktracker__button:hover {
+  opacity: 0.8;
+}
+
+.tasktracker__filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding: 8px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.tasktracker__filter-select {
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.tasktracker__filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  background: #0073aa;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.tasktracker__filter-button svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.tasktracker__filter-button:hover {
+  background: #005b8e;
+}
