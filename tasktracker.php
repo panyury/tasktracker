@@ -3,7 +3,7 @@
  * Plugin Name: TaskTracker
  * Description: Управління завданнями з кастомними статусами та винагородами.
  * Version: 1.0
- * Author: Your Name
+ * Author: Yury Egoroff
  */
 
 if (!defined('ABSPATH')) {
